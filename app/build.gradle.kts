@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.sunnyweather.android"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.sunnyweather.android"
@@ -66,4 +66,14 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    implementation(libs.androidx.lifecycle.extensions)
+    implementation(libs.androidx.lifecycle.livedata.ktx)
+
+    implementation(libs.retrofit)
+    implementation (libs.converter.gson)
+
+//    implementation("org.jetbrains.kotlin:kotlinx-coroutines-core:1.3.0")
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.kotlinx.coroutines.android)
 }
