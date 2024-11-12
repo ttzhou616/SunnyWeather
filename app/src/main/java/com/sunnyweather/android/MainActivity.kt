@@ -12,7 +12,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.sunnyweather.android.ui.theme.SunnyWeatherTheme
-//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
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
