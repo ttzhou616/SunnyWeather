@@ -1,6 +1,9 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+
+    // Existing plugins
+    alias(libs.plugins.compose.compiler)
 }
 
 android {
@@ -69,11 +72,16 @@ dependencies {
 
     implementation(libs.androidx.lifecycle.extensions)
     implementation(libs.androidx.lifecycle.livedata.ktx)
+//    implementation ("androidx.lifecycle:lifecycle-extensions:2.1.0")
+//    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0")
+//    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.2.0-alpha05")
 
     implementation(libs.retrofit)
     implementation (libs.converter.gson)
 
-//    implementation("org.jetbrains.kotlin:kotlinx-coroutines-core:1.3.0")
-    implementation(libs.kotlinx.coroutines.core)
-    implementation(libs.kotlinx.coroutines.android)
+//    implementation(libs.kotlinx.coroutines.core)
+//    implementation(libs.kotlinx.coroutines.android)
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.9.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")
+
 }
